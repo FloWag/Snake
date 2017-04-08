@@ -1,5 +1,6 @@
 package org.florian_wagner.snake;
 
+import javafx.application.Application;
 import org.florian_wagner.snake.gui.MainMenu;
 
 
@@ -17,7 +18,12 @@ public class SnakeGame {
 
     public void init()
     {
-        new MainMenu();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Application.launch(MainMenu.class);
+            }
+        }).start();
     }
 
 }
