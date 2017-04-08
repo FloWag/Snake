@@ -4,7 +4,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.florian_wagner.snake.gui.AboutGUI;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -51,7 +53,12 @@ public class MenuController implements Initializable {
      */
     public void handleCredits()
     {
-        System.out.println("credits");
+        Stage stage = (Stage) button_playoffline.getScene().getWindow();
+        try {
+            new AboutGUI().start(stage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
