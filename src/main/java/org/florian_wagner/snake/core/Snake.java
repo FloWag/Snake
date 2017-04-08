@@ -12,6 +12,12 @@ public class Snake {
 
     private Direction direction;
 
+    /**
+     *
+     * @param x x-position of the snake head
+     * @param y y-position of the snake head
+     * @param length default length of the snake
+     */
     public Snake(int x, int y, int length)
     {
 
@@ -39,6 +45,11 @@ public class Snake {
         direction = Direction.EAST;
     }
 
+    /**
+     *
+     * @param includeHead when true -> head is included, else not
+     * @return a location-list
+     */
     public List<Location> getAllLocations(boolean includeHead)
     {
         List<Location> list = new List<Location>();
@@ -60,6 +71,9 @@ public class Snake {
         return direction;
     }
 
+    /**
+     * let the snake move one step
+     */
     public void move()
     {
         SnakePart current = tail;
@@ -94,6 +108,9 @@ public class Snake {
         return head.getLocation();
     }
 
+    /**
+     * let the snake length increase (1 unit)
+     */
     public void grow()
     {
         SnakePart part = new SnakePart(tail.getLocation());

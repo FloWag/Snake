@@ -31,6 +31,10 @@ public class OfflineGame {
 
     private Location apple;
 
+    /**
+     * this method initialises the GUI of the offline game and starts the game thread
+     * @param stage
+     */
     public OfflineGame(Stage stage)
     {
 
@@ -59,6 +63,9 @@ public class OfflineGame {
         thread.start();
     }
 
+    /**
+     * this method starts a new game
+     */
     private void init()
     {
         // refresh settings
@@ -78,6 +85,9 @@ public class OfflineGame {
         render();
     }
 
+    /**
+     * implements the update part of every game tick
+     */
     private void update()
     {
         if(snake != null)
@@ -129,6 +139,9 @@ public class OfflineGame {
         }
     }
 
+    /**
+     * implements the render part of every game tick
+     */
     private void render()
     {
         gui.getController().cleanGC();
@@ -153,6 +166,10 @@ public class OfflineGame {
 
     }
 
+    /**
+     * key input handling
+     * @param ev
+     */
     public void handleKeyEvent(KeyEvent ev)
     {
         if(snake != null)
@@ -179,6 +196,9 @@ public class OfflineGame {
         }
     }
 
+    /**
+     * this method removes the snake and resets the settings + labels
+     */
     public void gameOver()
     {
         snake = null;
@@ -186,6 +206,9 @@ public class OfflineGame {
         gui.getController().resetStatusText();
     }
 
+    /**
+     * stops the game thread
+     */
     public void dispose()
     {
         thread.stop();

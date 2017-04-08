@@ -1,6 +1,5 @@
 package org.florian_wagner.snake.gui;
 
-import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -10,7 +9,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import org.florian_wagner.snake.process.MenuController;
 import org.florian_wagner.snake.process.OfflineController;
 import org.florian_wagner.snake.process.OfflineGame;
 
@@ -23,6 +21,12 @@ public class OfflineGUI {
 
     private OfflineController controller;
 
+    /**
+     * JavaFX stuff
+     * @param primaryStage
+     * @param keyEventHandler
+     * @throws Exception
+     */
     public void start(Stage primaryStage,OfflineGame keyEventHandler) throws Exception {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/offlinegame.fxml");
         System.out.println(xml == null);

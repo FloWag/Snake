@@ -15,6 +15,9 @@ public class SnakeGame {
         new SnakeGame().init();
     }
 
+    /**
+     * starts the JavaFX application (main menu first)
+     */
     public void init()
     {
         new Thread(new Runnable() {

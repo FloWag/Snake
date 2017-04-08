@@ -29,6 +29,11 @@ public class Location {
         return y;
     }
 
+    /**
+     * calculates the relative location
+     * @param dir the direction you want to get the relative to
+     * @return the relative location
+     */
     public Location getRelative(Direction dir)
     {
         if(dir == Direction.NORTH)

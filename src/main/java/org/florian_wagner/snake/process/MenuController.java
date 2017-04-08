@@ -1,6 +1,5 @@
 package org.florian_wagner.snake.process;
 
-import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -21,6 +20,9 @@ public class MenuController implements Initializable {
     @FXML private Button button_credits;
 
 
+    /**
+     * this method implements the functionality of the "Offline Spielen" button
+     */
     public void handlePlayOffline()
     {
         System.out.println("play offline");
@@ -36,18 +38,28 @@ public class MenuController implements Initializable {
         */
     }
 
+    /**
+     * this method implements the functionality of the "Mehrspieler" button
+     */
     public void handlePlayMultiplayer()
     {
         System.out.println("play multiplayer");
     }
 
+    /**
+     * this method implements the functionality of the "Über" button
+     */
     public void handleCredits()
     {
         System.out.println("credits");
     }
 
 
-
+    /**
+     * JavaFX stuff
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println("init menu");

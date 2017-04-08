@@ -19,6 +19,11 @@ import java.net.URL;
 public class MainMenu extends Application {
 
 
+    /**
+     * JavaFX stuff
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/menu.fxml");
