@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import org.florian_wagner.snake.process.MenuController;
@@ -29,6 +30,9 @@ public class MainMenu extends Application {
 
         int width = 400;
         int height = 400;
+
+        // set icon
+        primaryStage.getIcons().add(new Image("/org/florian_wagner/snake/resources/abikalypse.png"));
 
         Scene scene = new Scene(root, width,height);
         primaryStage.setTitle("Hauptmenü");

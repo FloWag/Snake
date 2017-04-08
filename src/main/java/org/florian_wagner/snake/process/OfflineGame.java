@@ -22,6 +22,10 @@ public class OfflineGame {
 
     private Snake snake;
 
+    private int SPEED = 10;
+    private Color color_snake;
+    private Color color_head;
+
     public OfflineGame(Stage stage)
     {
 
@@ -37,7 +41,7 @@ public class OfflineGame {
                 while(true)
                 {
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(1000 / SPEED);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -46,34 +50,49 @@ public class OfflineGame {
                 }
             }
         });
-        init();
+
         thread.start();
     }
 
     private void init()
     {
+        // refresh settings
+        color_snake = gui.getController().getColorSnake();
+        color_head = gui.getController().getColorHead();
+        SPEED = gui.getController().getSpeed();
+
+
+
+        // init snake + render
         snake = new Snake(0,5,5);
         render();
     }
 
     private void update()
     {
-        snake.move();
+        if(snake != null)
+        {
+            snake.move();
+        }
     }
 
     private void render()
     {
         gui.getController().cleanGC();
 
+        if(snake == null)
+        {
+            return;
+        }
         //render snake
         List<Location> parts = snake.getAllLocations(true);
         for(parts.toFirst();parts.hasAccess();parts.next())
         {
             Location loc = parts.getContent();
-            gui.getController().fillVirtualPixel(loc.getX(),loc.getY(), Color.web("#008aff"));
+            gui.getController().fillVirtualPixel(loc.getX(),loc.getY(), color_snake);
         }
 
-        gui.getController().fillVirtualPixel(snake.getHeadLocation().getX(),snake.getHeadLocation().getY(),Color.web("#1995fe"));
+        gui.getController().fillVirtualPixel(snake.getHeadLocation().getX(),snake.getHeadLocation().getY(),color_head);
     }
 
     public void handleKeyEvent(KeyEvent ev)
@@ -95,6 +114,7 @@ public class OfflineGame {
         if(ev.getCode() == KeyCode.ENTER)
         {
             // new game
+            gui.getController().disableSettings(); // just a little bugfix
             init();
         }
     }
