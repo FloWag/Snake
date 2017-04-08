@@ -10,7 +10,6 @@ import org.florian_wagner.snake.gui.MainMenu;
 public class SnakeGame {
 
 
-
     public static void main(String[] args)
     {
         new SnakeGame().init();

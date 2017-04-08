@@ -1,11 +1,11 @@
-package org.florian_wagner.snake.gui;
+package org.florian_wagner.snake.process;
 
+import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -14,19 +14,26 @@ import java.util.ResourceBundle;
  */
 public class MenuController implements Initializable {
 
-    @FXML
-    public Button button_playoffline;
+    @FXML private Button button_playoffline;
 
-    @FXML
-    public Button button_playmultiplayer;
+    @FXML private Button button_playmultiplayer;
 
-    @FXML
-    public Button button_credits;
+    @FXML private Button button_credits;
 
 
     public void handlePlayOffline()
     {
         System.out.println("play offline");
+
+        Stage stage = (Stage) button_playoffline.getScene().getWindow();
+        // start offline game window
+        new OfflineGame(stage);
+
+        // close current window
+        /*
+
+        stage.close();
+        */
     }
 
     public void handlePlayMultiplayer()
