@@ -3,10 +3,13 @@ package org.florian_wagner.snake.gui;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import org.florian_wagner.snake.process.MenuController;
 import org.florian_wagner.snake.process.OfflineController;
 import org.florian_wagner.snake.process.OfflineGame;
@@ -28,19 +31,31 @@ public class OfflineGUI {
         Parent root = loader.load();
         controller = loader.getController();
 
-        Scene scene = new Scene(root, 1280,720);
+        int width = 1129;
+        int height = 720;
+
+        Scene scene = new Scene(root, width,height);
         scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 keyEventHandler.handleKeyEvent(event);
             }
         });
+
         primaryStage.setTitle("Offline Spiel");
         primaryStage.setScene(scene);
-        primaryStage.setX(120);
-        primaryStage.setY(120);
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        primaryStage.setX((screenBounds.getWidth() - width) / 2);
+        primaryStage.setY((screenBounds.getHeight() - height) / 2);
         primaryStage.setResizable(false);
         primaryStage.show();
+
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent event) {
+                System.exit(0);
+            }
+        });
     }
 
     public OfflineController getController() {

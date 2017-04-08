@@ -3,8 +3,10 @@ package org.florian_wagner.snake.gui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import org.florian_wagner.snake.process.MenuController;
 
@@ -25,12 +27,18 @@ public class MainMenu extends Application {
         loader.setController(controller);
         Parent root = loader.load();
 
+        int width = 400;
+        int height = 400;
 
-        Scene scene = new Scene(root, 400,400);
+        Scene scene = new Scene(root, width,height);
         primaryStage.setTitle("Hauptmenü");
         primaryStage.setScene(scene);
-        primaryStage.setX(120);
-        primaryStage.setY(120);
+
+        //make stage in center of the screen
+        Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+        primaryStage.setX((screenBounds.getWidth() - width) / 2);
+        primaryStage.setY((screenBounds.getHeight() - height) / 2);
+
         primaryStage.setResizable(false);
         primaryStage.show();
     }

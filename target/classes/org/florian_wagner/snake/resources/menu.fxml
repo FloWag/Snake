@@ -13,7 +13,7 @@
             <Image url="@/org/florian_wagner/snake/resources/title.png" />
          </image>
       </ImageView>
-      <Button fx:id="button_playoffline" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handlePlayOffline" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Play Offline">
+      <Button fx:id="button_playoffline" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handlePlayOffline" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Offline spielen">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
@@ -21,12 +21,12 @@
             <Insets top="20.0" />
          </VBox.margin>
       </Button>
-      <Button fx:id="button_playmultiplayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handlePlayMultiplayer" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Play Multiplayer">
+      <Button fx:id="button_playmultiplayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handlePlayMultiplayer" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Mehrspieler">
          <VBox.margin>
             <Insets top="20.0" />
          </VBox.margin>
       </Button>
-      <Button fx:id="button_credits" layoutX="65.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleCredits" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Credits">
+      <Button fx:id="button_credits" layoutX="65.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleCredits" prefHeight="57.0" prefWidth="290.0" stylesheets="@menu.css" text="Über">
          <VBox.margin>
             <Insets top="20.0" />
          </VBox.margin>
