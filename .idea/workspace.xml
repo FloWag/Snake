@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b86fb197-c965-4a45-9438-a65e38fcee80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/SnakeGame.class" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/SnakeGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/gui/MainMenu.class" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/gui/MainMenu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Snake.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/SnakeGame$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/resources/title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menu.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/menu.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/resources/menu.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/SnakeGame.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/SnakeGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/res/title.png" afterPath="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/title.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,11 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -104,29 +118,6 @@
                 <element signature="e#379#380#0" expanded="false" />
                 <element signature="e#404#405#0" expanded="false" />
                 <element signature="e#428#429#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/nrw/schulentwicklung/graphklassen/GraphNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-              <folding>
-                <element signature="e#1074#1075#0" expanded="false" />
-                <element signature="e#1104#1105#0" expanded="false" />
-                <element signature="e#1137#1138#0" expanded="false" />
-                <element signature="e#1164#1165#0" expanded="false" />
-                <element signature="e#1199#1200#0" expanded="false" />
-                <element signature="e#1228#1229#0" expanded="false" />
-                <element signature="e#1638#1639#0" expanded="false" />
-                <element signature="e#1659#1660#0" expanded="false" />
-                <element signature="e#1803#1804#0" expanded="false" />
-                <element signature="e#1825#1826#0" expanded="false" />
-                <element signature="e#2180#2181#0" expanded="false" />
-                <element signature="e#2201#2202#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -215,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/SnakeGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -925,7 +917,7 @@
       <workItem from="1491225336927" duration="4366000" />
       <workItem from="1491236951288" duration="2131000" />
       <workItem from="1491580129368" duration="1531000" />
-      <workItem from="1491659127768" duration="3562000" />
+      <workItem from="1491659127768" duration="3704000" />
     </task>
     <task id="LOCAL-00001" summary="added snake itself&#10;started with main menu&#10;added main menu title">
       <created>1491237604336</created>
@@ -941,15 +933,22 @@
       <option name="project" value="LOCAL" />
       <updated>1491662054174</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic implementation of JavaFX">
+      <created>1491663857878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1491663857878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11590000" />
+    <option name="totallyTimeSpent" value="11732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -963,7 +962,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29492602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29492602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -991,7 +990,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added snake itself&#10;started with main menu&#10;added main menu title" />
     <MESSAGE value="removed all the JFrame stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed all the JFrame stuff" />
+    <MESSAGE value="basic implementation of JavaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic implementation of JavaFX" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1542,6 +1542,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
