@@ -1,6 +1,5 @@
 package org.florian_wagner.snake.process;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
@@ -8,10 +7,9 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
+import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,6 +31,8 @@ public class OfflineController implements Initializable {
 
     @FXML private VBox rootbox;
 
+    @FXML private Text statuslabel;
+
 
     private GraphicsContext gc;
 
@@ -52,6 +52,8 @@ public class OfflineController implements Initializable {
         settings.setFocusTraversable(false);
 
         rootbox.requestFocus();
+
+        statuslabel.setText("Neues Spiel: Enter");
     }
 
     public void disableSettings()
@@ -67,6 +69,15 @@ public class OfflineController implements Initializable {
         speed.setDisable(false);
         color_snake.setDisable(false);
         color_head.setDisable(false);
+    }
+
+    public void setStatusText(String text)
+    {
+        statuslabel.setText(text);
+    }
+    public void resetStatusText()
+    {
+        statuslabel.setText("Neues Spiel: Enter");
     }
 
 

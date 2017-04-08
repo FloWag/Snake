@@ -23,6 +23,7 @@ public class OfflineGame {
     private Thread thread;
 
     private Snake snake;
+    private int length;
 
     private int SPEED = 10;
     private Color color_snake;
@@ -65,13 +66,15 @@ public class OfflineGame {
         color_head = gui.getController().getColorHead();
         SPEED = gui.getController().getSpeed();
 
+        length = 5;
+        gui.getController().setStatusText("Länge: " + length);
 
         // spawn apple
         Random r = new Random();
         apple = new Location(r.nextInt(32),r.nextInt(24));
 
         // init snake + render
-        snake = new Snake(0,5,5);
+        snake = new Snake(0,5,length);
         render();
     }
 
@@ -116,6 +119,8 @@ public class OfflineGame {
                 if(snake.getHeadLocation().getY() == apple.getY())
                 {
                     snake.grow();
+                    length++;
+                    gui.getController().setStatusText("Länge: " + length);
                     Random r = new Random();
                     apple = new Location(r.nextInt(32),r.nextInt(24));
                 }
@@ -178,6 +183,7 @@ public class OfflineGame {
     {
         snake = null;
         gui.getController().enableSettings();
+        gui.getController().resetStatusText();
     }
 
     public void dispose()
