@@ -25,8 +25,13 @@ public class MainMenu extends Application {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/menu.fxml");
         System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
+        MenuController controller = loader.getController();
+        loader.setController(controller);
         Parent root = loader.load();
-        Scene scene = new Scene(root, 400,600);
+
+
+
+        Scene scene = new Scene(root, 400,400);
         primaryStage.setTitle("Main Menu");
         primaryStage.setScene(scene);
         primaryStage.setX(120);
