@@ -32,9 +32,11 @@ public class Snake {
             if(previousPart != null)
             {
                 previousPart.setNextPart(part);
+                part.setPreviousPart(previousPart);
             }
             previousPart = part;
         }
+        direction = Direction.EAST;
     }
 
     public List<Location> getAllLocations(boolean includeHead)
@@ -60,21 +62,36 @@ public class Snake {
 
     public void move()
     {
-        SnakePart current = head;
+        SnakePart current = tail;
+
+        //collect all snake parts (but the head) as list
         List<SnakePart> array = new List<SnakePart>();
-        // move every element to the next position
+        int i = 0;
         while(current != null)
         {
             array.append(current);
-            if(current.getNextPart() != null)
-            {
-                current.getNextPart().setLocation(current.getLocation());
-            }
-            current = current.getNextPart();
+            current = current.getPreviousPart();
+            i++;
         }
+
+        // now move every part one step ahead
+        for(array.toFirst();array.hasAccess();array.next())
+        {
+            SnakePart sp = array.getContent();
+            if(sp.getPreviousPart() != null)
+            {
+                sp.setLocation(sp.getPreviousPart().getLocation());
+            }
+        }
+
         // move the head to the next position (depending on the direction)
         head.setLocation(head.getLocation().getRelative(direction));
 
+    }
+
+    public Location getHeadLocation()
+    {
+        return head.getLocation();
     }
 
     public void grow()

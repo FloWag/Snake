@@ -1,11 +1,15 @@
 package org.florian_wagner.snake.gui;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.florian_wagner.snake.process.MenuController;
+import org.florian_wagner.snake.process.OfflineController;
+import org.florian_wagner.snake.process.OfflineGame;
 
 import java.net.URL;
 
@@ -14,18 +18,23 @@ import java.net.URL;
  */
 public class OfflineGUI {
 
-    public void start(Stage primaryStage) throws Exception {
+    private OfflineController controller;
+
+    public void start(Stage primaryStage,OfflineGame keyEventHandler) throws Exception {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/offlinegame.fxml");
         System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
-        /*
-        MenuController controller = loader.getController();
-        loader.setController(controller);
-        */
-        Parent root = loader.load();
 
+        Parent root = loader.load();
+        controller = loader.getController();
 
         Scene scene = new Scene(root, 1280,720);
+        scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                keyEventHandler.handleKeyEvent(event);
+            }
+        });
         primaryStage.setTitle("Offline Game");
         primaryStage.setScene(scene);
         primaryStage.setX(120);
@@ -34,4 +43,7 @@ public class OfflineGUI {
         primaryStage.show();
     }
 
+    public OfflineController getController() {
+        return controller;
+    }
 }

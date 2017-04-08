@@ -6,12 +6,22 @@ package org.florian_wagner.snake.core;
 public class SnakePart {
 
     private SnakePart nextPart;
+    private SnakePart previousPart;
     private Location loc;
 
     public SnakePart(Location location)
     {
         nextPart = null;
+        previousPart = null;
         this.loc = location;
+    }
+
+    public void setPreviousPart(SnakePart previousPart) {
+        this.previousPart = previousPart;
+    }
+
+    public SnakePart getPreviousPart() {
+        return previousPart;
     }
 
     public void setNextPart(SnakePart nextPart) {
