@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b86fb197-c965-4a45-9438-a65e38fcee80" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Snake.jar" afterPath="$PROJECT_DIR$/target/Snake.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/gui/MainMenu.class" afterPath="$PROJECT_DIR$/target/classes/org/florian_wagner/snake/gui/MainMenu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/offlinegame.fxml" afterPath="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/offlinegame.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,17 +26,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+            <state relative-caret-position="393">
+              <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
               <folding>
                 <element signature="e#1646#1657#0" expanded="true" />
                 <element signature="e#2342#2343#0" expanded="true" />
                 <element signature="e#2383#2384#0" expanded="true" />
-                <element signature="e#2583#2584#0" expanded="true" />
                 <element signature="e#2619#2620#0" expanded="true" />
+                <element signature="e#2655#2656#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,15 +129,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfflineGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OfflineGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3177#3178#0" expanded="true" />
-                <element signature="e#3206#3207#0" expanded="true" />
+                <element signature="e#5013#5014#0" expanded="true" />
+                <element signature="e#5042#5043#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,13 +222,13 @@
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/SnakePart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/menu.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/OfflineGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/gui/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/offlinegame.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" />
       </list>
     </option>
   </component>
@@ -968,7 +971,7 @@
       <workItem from="1491236951288" duration="2131000" />
       <workItem from="1491580129368" duration="1531000" />
       <workItem from="1491659127768" duration="3921000" />
-      <workItem from="1491664217031" duration="19148000" />
+      <workItem from="1491664217031" duration="20347000" />
     </task>
     <task id="LOCAL-00001" summary="added snake itself&#10;started with main menu&#10;added main menu title">
       <created>1491237604336</created>
@@ -1047,11 +1050,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491680054892</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added settings to singleplayer">
+      <created>1491684192913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491684192913</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31097000" />
+    <option name="totallyTimeSpent" value="32296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1107,7 +1117,8 @@
     <MESSAGE value="snake is alive" />
     <MESSAGE value="changed menu to german language" />
     <MESSAGE value="made offline game window size more fancy&#10;made the windows spawn in the center of the screen&#10;added a close operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="made offline game window size more fancy&#10;made the windows spawn in the center of the screen&#10;added a close operation" />
+    <MESSAGE value="added settings to singleplayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added settings to singleplayer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1440,20 +1451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-          <folding>
-            <element signature="e#1646#1657#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2383#2384#0" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
-            <element signature="e#2619#2620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/org/florian_wagner/snake/resources/menu.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1542,12 +1539,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3206#3207#0" expanded="true" />
+            <element signature="e#5013#5014#0" expanded="true" />
+            <element signature="e#5042#5043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+          <folding>
+            <element signature="e#1646#1657#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#2655#2656#0" expanded="true" />
           </folding>
         </state>
       </provider>

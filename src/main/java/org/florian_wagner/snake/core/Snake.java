@@ -98,6 +98,7 @@ public class Snake {
     {
         SnakePart part = new SnakePart(tail.getLocation());
         tail.setNextPart(part);
+        part.setPreviousPart(tail);
         tail = part;
     }
 

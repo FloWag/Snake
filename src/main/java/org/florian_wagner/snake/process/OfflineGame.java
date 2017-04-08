@@ -10,6 +10,8 @@ import org.florian_wagner.snake.core.Location;
 import org.florian_wagner.snake.core.Snake;
 import org.florian_wagner.snake.gui.OfflineGUI;
 
+import java.util.Random;
+
 
 /**
  * Created by Florian on 08.04.2017.
@@ -25,6 +27,8 @@ public class OfflineGame {
     private int SPEED = 10;
     private Color color_snake;
     private Color color_head;
+
+    private Location apple;
 
     public OfflineGame(Stage stage)
     {
@@ -62,6 +66,9 @@ public class OfflineGame {
         SPEED = gui.getController().getSpeed();
 
 
+        // spawn apple
+        Random r = new Random();
+        apple = new Location(r.nextInt(32),r.nextInt(24));
 
         // init snake + render
         snake = new Snake(0,5,5);
@@ -73,6 +80,47 @@ public class OfflineGame {
         if(snake != null)
         {
             snake.move();
+
+            // check for game over
+
+            // check if head is out of bounds
+            if(snake.getHeadLocation().getX() > 32 || snake.getHeadLocation().getX() < 0)
+            {
+                gameOver();
+                return;
+            }
+            if(snake.getHeadLocation().getY() > 24 || snake.getHeadLocation().getY() < 0)
+            {
+                gameOver();
+                return;
+            }
+
+            // check if snake eats a snake part
+            List<Location> parts = snake.getAllLocations(false);
+            for(parts.toFirst();parts.hasAccess();parts.next())
+            {
+                Location loc = parts.getContent();
+                if(loc.getX() == snake.getHeadLocation().getX())
+                {
+                    if(loc.getY() == snake.getHeadLocation().getY())
+                    {
+                        gameOver();
+                        return;
+                    }
+                }
+            }
+
+            // check if snake eats apple
+            if(snake.getHeadLocation().getX() == apple.getX())
+            {
+                if(snake.getHeadLocation().getY() == apple.getY())
+                {
+                    snake.grow();
+                    Random r = new Random();
+                    apple = new Location(r.nextInt(32),r.nextInt(24));
+                }
+            }
+
         }
     }
 
@@ -84,6 +132,10 @@ public class OfflineGame {
         {
             return;
         }
+        // render apple
+        gui.getController().fillVirtualPixel(apple.getX(),apple.getY(),Color.GREEN);
+
+
         //render snake
         List<Location> parts = snake.getAllLocations(true);
         for(parts.toFirst();parts.hasAccess();parts.next())
@@ -91,32 +143,41 @@ public class OfflineGame {
             Location loc = parts.getContent();
             gui.getController().fillVirtualPixel(loc.getX(),loc.getY(), color_snake);
         }
-
         gui.getController().fillVirtualPixel(snake.getHeadLocation().getX(),snake.getHeadLocation().getY(),color_head);
+
+
     }
 
     public void handleKeyEvent(KeyEvent ev)
     {
-        if(ev.getCode() == KeyCode.UP)
+        if(snake != null)
         {
-            if(snake.getDirection() != Direction.SOUTH)snake.setDirection(Direction.NORTH);
-        }if(ev.getCode() == KeyCode.DOWN)
-        {
-            if(snake.getDirection() != Direction.NORTH)snake.setDirection(Direction.SOUTH);
-        }if(ev.getCode() == KeyCode.RIGHT)
-        {
-            if(snake.getDirection() != Direction.WEST)snake.setDirection(Direction.EAST);
-        }if(ev.getCode() == KeyCode.LEFT)
-        {
-            if(snake.getDirection() != Direction.EAST)snake.setDirection(Direction.WEST);
+            if(ev.getCode() == KeyCode.UP)
+            {
+                if(snake.getDirection() != Direction.SOUTH)snake.setDirection(Direction.NORTH);
+            }if(ev.getCode() == KeyCode.DOWN)
+            {
+                if(snake.getDirection() != Direction.NORTH)snake.setDirection(Direction.SOUTH);
+            }if(ev.getCode() == KeyCode.RIGHT)
+            {
+                if(snake.getDirection() != Direction.WEST)snake.setDirection(Direction.EAST);
+            }if(ev.getCode() == KeyCode.LEFT)
+            {
+                if(snake.getDirection() != Direction.EAST)snake.setDirection(Direction.WEST);
+            }
         }
-
         if(ev.getCode() == KeyCode.ENTER)
         {
             // new game
             gui.getController().disableSettings(); // just a little bugfix
             init();
         }
+    }
+
+    public void gameOver()
+    {
+        snake = null;
+        gui.getController().enableSettings();
     }
 
     public void dispose()
