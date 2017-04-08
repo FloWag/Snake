@@ -27,7 +27,7 @@ public class MainMenu extends Application {
 
 
         Scene scene = new Scene(root, 400,400);
-        primaryStage.setTitle("Main Menu");
+        primaryStage.setTitle("Hauptmenü");
         primaryStage.setScene(scene);
         primaryStage.setX(120);
         primaryStage.setY(120);

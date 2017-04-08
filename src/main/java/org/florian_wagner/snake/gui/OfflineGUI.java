@@ -35,7 +35,7 @@ public class OfflineGUI {
                 keyEventHandler.handleKeyEvent(event);
             }
         });
-        primaryStage.setTitle("Offline Game");
+        primaryStage.setTitle("Offline Spiel");
         primaryStage.setScene(scene);
         primaryStage.setX(120);
         primaryStage.setY(120);
