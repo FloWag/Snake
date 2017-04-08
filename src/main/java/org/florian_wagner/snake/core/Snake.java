@@ -47,7 +47,7 @@ public class Snake {
 
     /**
      *
-     * @param includeHead when true -> head is included, else not
+     * @param includeHead when true head is included, else not
      * @return a location-list
      */
     public List<Location> getAllLocations(boolean includeHead)

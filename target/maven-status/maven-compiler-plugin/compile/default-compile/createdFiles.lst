@@ -7,6 +7,7 @@ de\nrw\schulentwicklung\netzklassen\Client$Clientempfaenger.class
 org\florian_wagner\snake\core\Snake.class
 org\florian_wagner\snake\gui\OfflineGUI$2.class
 de\nrw\schulentwicklung\graphklassen\GraphNode.class
+org\florian_wagner\snake\gui\AboutGUI.class
 de\nrw\schulentwicklung\netzklassen\Server.class
 de\nrw\schulentwicklung\listenklassen\Queue$QueueNode.class
 org\florian_wagner\snake\process\OfflineGame.class

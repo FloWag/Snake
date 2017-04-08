@@ -119,7 +119,7 @@ public class OfflineController implements Initializable {
     }
 
     /**
-     * get the content from the speed setting. if the user entered an invalid value -> default value = 10
+     * get the content from the speed setting. if the user entered an invalid value, default value = 10
      * @return the speed
      */
     public int getSpeed()

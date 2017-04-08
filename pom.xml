@@ -44,6 +44,14 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <excludePackageNames>de.nrw</excludePackageNames>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
