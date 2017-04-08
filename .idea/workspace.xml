@@ -1,110 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b86fb197-c965-4a45-9438-a65e38fcee80" name="Default" comment="added about box">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/allclasses-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/allclasses-noframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/constant-values.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/BinarySearchTree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/BinaryTree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/ComparableContent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/BinarySearchTree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/BinaryTree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/ComparableContent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/Graph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/GraphNode.Edge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/GraphNode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/Graph.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/GraphNode.Edge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/GraphNode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/List.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/Queue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/Stack.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/List.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/Queue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/Stack.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Client.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Connection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Server.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Client.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Connection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Server.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/deprecated-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/help-doc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/index-all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/SnakeGame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/class-use/SnakeGame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Direction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Location.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Snake.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/SnakePart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Direction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Location.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Snake.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/SnakePart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/AboutGUI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/MainMenu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/OfflineGUI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/AboutGUI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/MainMenu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/OfflineGUI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/MenuController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/OfflineController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/OfflineGame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/MenuController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/OfflineController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/OfflineGame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/overview-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/overview-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/overview-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/package-list" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidocs/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/org/florian_wagner/snake/SnakeGame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/org/florian_wagner/snake/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/org/florian_wagner/snake/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/org/florian_wagner/snake/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Snake.jar" afterPath="$PROJECT_DIR$/target/Snake.jar" />
+    <list default="true" id="b86fb197-c965-4a45-9438-a65e38fcee80" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/BinarySearchTree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/BinaryTree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/ComparableContent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/BinarySearchTree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/BinaryTree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/class-use/ComparableContent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/baumklassen/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/Graph.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/GraphNode.Edge.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/GraphNode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/Graph.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/GraphNode.Edge.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/class-use/GraphNode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/graphklassen/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/List.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/Queue.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/Stack.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/List.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/Queue.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/class-use/Stack.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/listenklassen/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Connection.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/Server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Connection.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/class-use/Server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/de/nrw/schulentwicklung/netzklassen/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/SnakeGame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/class-use/SnakeGame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Direction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/Snake.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/SnakePart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Direction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Location.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/Snake.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/class-use/SnakePart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/core/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/AboutGUI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/MainMenu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/OfflineGUI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/AboutGUI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/MainMenu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/class-use/OfflineGUI.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/gui/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/MenuController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/OfflineController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/OfflineGame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/MenuController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/OfflineController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/class-use/OfflineGame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/org/florian_wagner/snake/process/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/overview-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/overview-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apidocs/stylesheet.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/core/Snake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java" afterPath="$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,8 +137,8 @@
       <file leaf-file-name="OfflineController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="121" column="84" lean-forward="false" selection-start-line="121" selection-start-column="84" selection-end-line="121" selection-end-column="84" />
+            <state relative-caret-position="195">
+              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -577,20 +566,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="baumklassen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apidocs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1115,7 +1090,7 @@
       <workItem from="1491236951288" duration="2131000" />
       <workItem from="1491580129368" duration="1531000" />
       <workItem from="1491659127768" duration="3921000" />
-      <workItem from="1491664217031" duration="24880000" />
+      <workItem from="1491664217031" duration="25022000" />
     </task>
     <task id="LOCAL-00001" summary="added snake itself&#10;started with main menu&#10;added main menu title">
       <created>1491237604336</created>
@@ -1229,15 +1204,22 @@
       <option name="project" value="LOCAL" />
       <updated>1491688558377</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added javadoc">
+      <created>1491689935225</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1491689935225</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36829000" />
+    <option name="totallyTimeSpent" value="36971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1254,7 +1236,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29492602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1294,7 +1276,8 @@
     <MESSAGE value="finished singleplayer" />
     <MESSAGE value="added comments" />
     <MESSAGE value="added about box" />
-    <option name="LAST_COMMIT_MESSAGE" value="added about box" />
+    <MESSAGE value="added javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added javadoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1762,8 +1745,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/florian_wagner/snake/process/OfflineController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="121" column="84" lean-forward="false" selection-start-line="121" selection-start-column="84" selection-end-line="121" selection-end-column="84" />
+        <state relative-caret-position="195">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
