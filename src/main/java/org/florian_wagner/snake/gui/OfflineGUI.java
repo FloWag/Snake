@@ -29,7 +29,6 @@ public class OfflineGUI {
      */
     public void start(Stage primaryStage,OfflineGame keyEventHandler) throws Exception {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/offlinegame.fxml");
-        System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
 
         Parent root = loader.load();

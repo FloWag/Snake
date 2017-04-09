@@ -27,7 +27,6 @@ public class MainMenu extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/menu.fxml");
-        System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
         MenuController controller = loader.getController();
         loader.setController(controller);

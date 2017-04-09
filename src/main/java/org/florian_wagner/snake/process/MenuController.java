@@ -29,7 +29,6 @@ public class MenuController implements Initializable {
      */
     public void handlePlayOffline()
     {
-        System.out.println("play offline");
 
         Stage stage = (Stage) button_playoffline.getScene().getWindow();
         // start offline game window
@@ -44,7 +43,6 @@ public class MenuController implements Initializable {
     {
         Stage stage = (Stage) button_playmultiplayer.getScene().getWindow();
         new Matchup(stage);
-        System.out.println("play multiplayer");
     }
 
     /**
@@ -69,7 +67,6 @@ public class MenuController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println("init menu");
 
     }
 }

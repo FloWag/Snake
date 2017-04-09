@@ -182,7 +182,6 @@ public class SnakeServer extends Server {
         // first unidentified connection
         UnidentifiedConnection con = new UnidentifiedConnection(pClientIP,pClientPort);
         unidentifiedConnections.append(con);
-        System.out.println("new con");
     }
 
     /**
@@ -254,7 +253,6 @@ public class SnakeServer extends Server {
                 break;
         }
 
-        System.out.println(pMessage);
 
 
     }
@@ -321,7 +319,6 @@ public class SnakeServer extends Server {
             UserProfile user = connectedUsers.getContent();
             send(user.getClientIP(),user.getClientPort(),toSend);
         }
-        System.out.println(toSend);
 
     }
 
@@ -360,7 +357,6 @@ public class SnakeServer extends Server {
         {
             UserProfile user = connectedUsers.getContent();
             send(user.getClientIP(),user.getClientPort(),toSend);
-            System.out.println(toSend);
         }
     }
 

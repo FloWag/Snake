@@ -30,7 +30,6 @@ public class OnlineGUI {
      */
     public void start(Stage primaryStage, OnlineGame keyEventHandler) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/onlinegame.fxml");
-        System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
 
         Parent root = loader.load();
@@ -43,7 +42,6 @@ public class OnlineGUI {
         scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
-                System.out.println("Ja");
                 keyEventHandler.handleKeyEvent(event);
             }
         });
@@ -59,7 +57,6 @@ public class OnlineGUI {
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
-                System.out.println("hi man");
                 System.exit(0);
             }
         });

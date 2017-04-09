@@ -113,7 +113,6 @@ public class OnlineGame extends Client {
         if(ev.getCode() == KeyCode.ENTER)
         {
             // request snake spawn
-            System.out.println("Hi");
             send("4");
         }
     }

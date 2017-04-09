@@ -23,7 +23,6 @@ public class AboutGUI {
      */
     public void start(Stage primaryStage) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/about.fxml");
-        System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
         Parent root = loader.load();
 
