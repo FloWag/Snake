@@ -22,6 +22,12 @@ public class OnlineGUI {
 
     private OnlineController controller;
 
+    /**
+     * JavaFX stuff
+     * @param primaryStage
+     * @param keyEventHandler
+     * @throws IOException
+     */
     public void start(Stage primaryStage, OnlineGame keyEventHandler) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/onlinegame.fxml");
         System.out.println(xml == null);

@@ -35,6 +35,9 @@ public class MatchupController implements Initializable {
 
     @FXML private Text status;
 
+    /**
+     * handler for the "Host" button
+     */
     public void handleHost()
     {
         String n = name.getText();
@@ -47,9 +50,9 @@ public class MatchupController implements Initializable {
         {
             setStatus("Bitte keine ; verwenden!",Color.RED);
             return;
-        }if(n.contains("|"))
+        }if(n.contains("'"))
         {
-            setStatus("Bitte keine | verwenden!",Color.RED);
+            setStatus("Bitte keine ' verwenden!",Color.RED);
             return;
         }if(n.contains(","))
         {
@@ -70,6 +73,9 @@ public class MatchupController implements Initializable {
         matchup.hostGame(n,color_snake.getValue(),color_head.getValue(),speed);
     }
 
+    /**
+     * handler for the "join" button
+     */
     public void handleJoin()
     {
         String n = name.getText();
@@ -82,9 +88,9 @@ public class MatchupController implements Initializable {
         {
             setStatus("Bitte keine ; verwenden!",Color.RED);
             return;
-        }if(n.contains("|"))
+        }if(n.contains("'"))
         {
-            setStatus("Bitte keine | verwenden!",Color.RED);
+            setStatus("Bitte keine ' verwenden!",Color.RED);
             return;
         }if(n.contains(","))
         {

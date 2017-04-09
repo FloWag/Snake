@@ -26,6 +26,9 @@ public class SnakeServer extends Server {
         this.speed = speed;
     }
 
+    /**
+     * starts the game functionality on the server
+     */
     public void start()
     {
 
@@ -53,6 +56,9 @@ public class SnakeServer extends Server {
         thread.start();
     }
 
+    /**
+     * this method is called every game tick
+     */
     private void update()
     {
         // move every snake
@@ -142,6 +148,10 @@ public class SnakeServer extends Server {
         updateMatchfield();
     }
 
+    /**
+     * let a user's snake dispose and the scoreboard update
+     * @param user
+     */
     private void gameOver(UserProfile user)
     {
         user.setScore(0);
@@ -161,6 +171,11 @@ public class SnakeServer extends Server {
 
     // server methods
 
+    /**
+     * Event Handler for North Rhine Westphalia's Server.java
+     * @param pClientIP IP-Nummer des Clients, der neu angemeldet ist
+     * @param pClientPort Port-Nummer des Clients, der neu angemeldet ist
+     */
     @Override
     public void processNewConnection(String pClientIP, int pClientPort)
     {
@@ -170,6 +185,12 @@ public class SnakeServer extends Server {
         System.out.println("new con");
     }
 
+    /**
+     * Event Handler for North Rhine Westphalia's Server.java
+     * @param pClientIP IP-Nummer des Clients, der die Nachricht geschickt hat
+     * @param pClientPort Port-Nummer des Clients, der die Nachricht geschickt hat
+     * @param pMessage Die empfangene Nachricht, die bearbeitet werden soll
+     */
     @Override
     public void processMessage(String pClientIP, int pClientPort, String pMessage)
     {
@@ -238,6 +259,10 @@ public class SnakeServer extends Server {
 
     }
 
+    /**
+     * spawn a new snake at a random location + incl. update
+     * @param profile
+     */
     private void spawnSnake(UserProfile profile)
     {
         Snake snake = new Snake(0,new Random().nextInt(15),5);
@@ -246,6 +271,11 @@ public class SnakeServer extends Server {
         updateScoreboard();
     }
 
+    /**
+     * Event Handler for North Rhine Westphalia's Server.java
+     * @param pClientIP IP-Nummer des Clients, mit dem die Verbindung beendet wurde
+     * @param pClientPort Port-Nummer des Clients, mit dem die Verbindung beendet wurde
+     */
     @Override
     public void processClosedConnection(String pClientIP, int pClientPort)
     {
@@ -271,6 +301,9 @@ public class SnakeServer extends Server {
         }
     }
 
+    /**
+     * serializes all the scoreboard data to a string packet and sends it to the client
+     */
     private void updateScoreboard()
     {
 
@@ -292,6 +325,9 @@ public class SnakeServer extends Server {
 
     }
 
+    /**
+     * serializes all the graphic data to a string packet and sends it to the client
+     */
     private void updateMatchfield()
     {
 

@@ -16,6 +16,11 @@ import java.net.URL;
  */
 public class AboutGUI {
 
+    /**
+     * JavaFX stuff
+     * @param primaryStage
+     * @throws IOException
+     */
     public void start(Stage primaryStage) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/about.fxml");
         System.out.println(xml == null);

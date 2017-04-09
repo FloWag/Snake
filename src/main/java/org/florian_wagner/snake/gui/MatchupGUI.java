@@ -19,6 +19,11 @@ public class MatchupGUI {
 
     private MatchupController controller;
 
+    /**
+     * JavaFX stuff
+     * @param primaryStage
+     * @throws IOException
+     */
     public void start(Stage primaryStage) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/matchup.fxml");
         System.out.println(xml == null);

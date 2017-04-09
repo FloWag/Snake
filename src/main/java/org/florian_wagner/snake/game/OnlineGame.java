@@ -9,7 +9,6 @@ import org.florian_wagner.snake.core.Direction;
 import org.florian_wagner.snake.gui.OnlineGUI;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * Created by Florian on 09.04.2017.
@@ -32,6 +31,10 @@ public class OnlineGame extends Client {
         start(stage);
     }
 
+    /**
+     * build the GUI and send login to the server
+     * @param stage
+     */
     public void start(Stage stage)
     {
         gui = new OnlineGUI();
@@ -45,6 +48,10 @@ public class OnlineGame extends Client {
         send("1;"+ username + ";" + snake_color + ";" + head_color);
     }
 
+    /**
+     * Event handler for North Rhine Westphalica's Client.java
+     * @param pMessage die empfangene Nachricht, die bearbeitet werden soll
+     */
     @Override
     public void processMessage(String pMessage) {
         String[] split = pMessage.split(";");
