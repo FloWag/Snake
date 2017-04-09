@@ -64,9 +64,63 @@ public class SnakeServer extends Server {
         // check collision with another snakepart
         // first build a giant list with all snake part locations
         List<Location> usedLocations = new List<Location>();
+        for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())
+        {
+            UserProfile user = connectedUsers.getContent();
+            if(user.getSnake() != null)
+            {
+                List<Location> parts = user.getSnake().getAllLocations(false);
+                for(parts.toFirst();parts.hasAccess();parts.next())
+                {
+                    usedLocations.append(parts.getContent());
+                }
+            }
+        }
+        // check if any location is equal to a head location (or the head goes out of bounds)
+        for(usedLocations.toFirst();usedLocations.hasAccess();usedLocations.next())
+        {
+            Location loc = usedLocations.getContent();
+            for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())
+            {
+                UserProfile user = connectedUsers.getContent();
+                Snake snake = user.getSnake();
+                if(snake != null)
+                {
+                    if(snake.getHeadLocation().getX() == loc.getX())
+                    {
+                        if(snake.getHeadLocation().getY() == loc.getY())
+                        {
+                            // case snake dies
+                            gameOver(user);
+                            continue;
+                        }
+                    }
+                    // check if head is out of bounds
+                    if(snake.getHeadLocation().getX() > 32 || snake.getHeadLocation().getX() < 0)
+                    {
+                        gameOver(user);
+                        continue;
+                    }
+                    if(snake.getHeadLocation().getY() > 23 || snake.getHeadLocation().getY() < 0)
+                    {
+                        gameOver(user);
+                        continue;
+                    }
+                }
+            }
+        }
+
+
 
 
         updateMatchfield();
+    }
+
+    private void gameOver(UserProfile user)
+    {
+        user.setScore(0);
+        user.setSnake(null);
+        updateScoreboard();
     }
 
     public void stop()
@@ -92,7 +146,10 @@ public class SnakeServer extends Server {
     @Override
     public void processMessage(String pClientIP, int pClientPort, String pMessage)
     {
+        for(unidentifiedConnections.toFirst();unidentifiedConnections.hasAccess();unidentifiedConnections.next())
+        {
 
+        }
     }
 
     @Override

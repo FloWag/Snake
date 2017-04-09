@@ -47,4 +47,13 @@ public class SnakeGame {
         this.snakeServer = snakeServer;
     }
 
+    private void testServer()
+    {
+        snakeServer = new SnakeServer(2);
+        snakeServer.start();
+
+        snakeServer.processClosedConnection("127.0.0.1",56744);
+
+    }
+
 }
