@@ -31,7 +31,7 @@ public class SnakeGame {
             }
         }).start();
 
-        testServer();
+      //  testServer();
     }
 
     public static SnakeGame getInstance()

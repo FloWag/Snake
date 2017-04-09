@@ -18,6 +18,8 @@ public class SnakeServer extends Server {
     private List<UnidentifiedConnection> unidentifiedConnections;
     private List<UserProfile> connectedUsers;
 
+    private Location apple;
+
     public SnakeServer(int speed)
     {
         super(11121);
@@ -44,6 +46,9 @@ public class SnakeServer extends Server {
         unidentifiedConnections = new List<UnidentifiedConnection>();
         connectedUsers = new List<UserProfile>();
 
+        // spawn apple
+        Random r = new Random();
+        apple = new Location(r.nextInt(32),r.nextInt(24));
 
         thread.start();
     }
@@ -95,7 +100,7 @@ public class SnakeServer extends Server {
                         }
                     }
                     // check if head is out of bounds
-                    if(snake.getHeadLocation().getX() > 32 || snake.getHeadLocation().getX() < 0)
+                    if(snake.getHeadLocation().getX() > 31 || snake.getHeadLocation().getX() < 0)
                     {
                         gameOver(user);
                         continue;
@@ -109,7 +114,29 @@ public class SnakeServer extends Server {
             }
         }
 
+        // check if snake eats apple
+        for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())
+        {
+            UserProfile user = connectedUsers.getContent();
+            if(user.getSnake() != null)
+            {
+                Snake snake = user.getSnake();
+                if(snake.getHeadLocation().getX() == apple.getX())
+                {
+                    if(snake.getHeadLocation().getY() == apple.getY())
+                    {
+                        // case apple eat
+                        snake.grow();
+                        user.setScore(user.getScore() +1);
+                        updateScoreboard();
 
+                        // spawn new apple
+                        Random r = new Random();
+                        apple = new Location(r.nextInt(32),r.nextInt(24));
+                    }
+                }
+            }
+        }
 
 
         updateMatchfield();
@@ -190,6 +217,7 @@ public class SnakeServer extends Server {
                     {
                         Direction dir = Direction.fromInteger(Integer.parseInt(split[1]));
 
+                        if(profile.getSnake() == null)return;
                         // check if direction change is invalid
                         Snake snake = profile.getSnake();
                         if(dir == Direction.NORTH && snake.getDirection() == Direction.SOUTH)return;
@@ -288,6 +316,8 @@ public class SnakeServer extends Server {
                 toSend = toSend + ";" + user.getColor_head() + "'" + snake.getHeadLocation().getX() +"," + snake.getHeadLocation().getY();
             }
         }
+
+        toSend = toSend + ";" + "#12ff00" + "'" + apple.getX() + "," + apple.getY();
 
         // send to all connected clients
         for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())

@@ -2,6 +2,7 @@ package org.florian_wagner.snake.game;
 
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import org.florian_wagner.snake.SnakeGame;
 import org.florian_wagner.snake.gui.MatchupGUI;
 
 import java.io.IOException;
@@ -29,6 +30,10 @@ public class Matchup {
     public void hostGame(String name, Color color_snake, Color color_head, int speed)
     {
         gui.getController().setStatus("Starte Server ...", Color.GREEN);
+        SnakeServer snakeServer = new SnakeServer(speed);
+        snakeServer.start();
+        SnakeGame.getInstance().setSnakeServer(snakeServer);
+        joinGame(name,color_snake,color_head,"localhost");
     }
 
     public void joinGame(String name, Color color_snake, Color color_head, String ip)
