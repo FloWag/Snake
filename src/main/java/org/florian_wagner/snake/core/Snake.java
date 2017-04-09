@@ -12,6 +12,8 @@ public class Snake {
 
     private Direction direction;
 
+    private boolean moveAfterDirectionChange = true; // the snake is only allowed to change the direction one time per move-tick (to fix a bug)
+
     /**
      *
      * @param x x-position of the snake head
@@ -76,6 +78,7 @@ public class Snake {
      */
     public void move()
     {
+
         SnakePart current = tail;
 
         //collect all snake parts (but the head) as list
@@ -97,9 +100,10 @@ public class Snake {
                 sp.setLocation(sp.getPreviousPart().getLocation());
             }
         }
-
         // move the head to the next position (depending on the direction)
         head.setLocation(head.getLocation().getRelative(direction));
+
+        moveAfterDirectionChange = true;
 
     }
 
@@ -121,7 +125,11 @@ public class Snake {
 
     public void setDirection(Direction dir)
     {
-        this.direction = dir;
+        if(moveAfterDirectionChange)
+        {
+            this.direction = dir;
+            moveAfterDirectionChange = false;
+        }
     }
 
 }

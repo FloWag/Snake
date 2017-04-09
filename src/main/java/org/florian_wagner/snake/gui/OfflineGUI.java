@@ -57,6 +57,7 @@ public class OfflineGUI {
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
+                keyEventHandler.dispose(); // stop the thread
                 System.exit(0);
             }
         });
