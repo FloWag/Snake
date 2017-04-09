@@ -12,9 +12,11 @@ import java.io.IOException;
 public class Matchup {
 
     private MatchupGUI gui;
+    private Stage stage;
 
     public Matchup(Stage stage)
     {
+        this.stage = stage;
         try {
             gui = new MatchupGUI();
             gui.start(stage);
@@ -32,6 +34,9 @@ public class Matchup {
     public void joinGame(String name, Color color_snake, Color color_head, String ip)
     {
         gui.getController().setStatus("Verbinde ...",Color.GREEN);
+        String snakec = "#" + Integer.toHexString(color_snake.hashCode());
+        String headc = "#" + Integer.toHexString(color_head.hashCode());
+        new OnlineGame(ip,11121,snakec,headc,stage);
     }
 
 }
