@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.florian_wagner.snake.process.MatchupController">
    <children>
       <Text layoutX="77.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mehrspieler">
@@ -31,7 +30,7 @@
                      <children>
                         <TextField fx:id="ip_text" layoutX="95.0" layoutY="35.0" promptText="10.3.0.x" />
                         <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP-Addresse:" />
-                        <Button layoutX="257.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Beitreten!" />
+                        <Button fx:id="button_join" layoutX="257.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#handleJoin" prefHeight="25.0" prefWidth="112.0" text="Beitreten!" />
                      </children>
                   </Pane>
                </content>
@@ -42,12 +41,13 @@
                      <children>
                         <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game-Speed:" />
                         <TextField fx:id="speed_text" layoutX="95.0" layoutY="35.0" prefHeight="25.0" prefWidth="83.0" promptText="10" text="10" />
-                        <Button layoutX="220.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Hosten" />
+                        <Button fx:id="button_host" layoutX="220.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#handleHost" prefHeight="25.0" prefWidth="149.0" text="Hosten" />
                      </children>
                   </Pane>
                </content>
           </Tab>
         </tabs>
       </TabPane>
+      <Text fx:id="status" fill="RED" layoutX="180.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </Pane>

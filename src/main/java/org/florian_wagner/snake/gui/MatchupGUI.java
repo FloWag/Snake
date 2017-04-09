@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import org.florian_wagner.snake.process.MatchupController;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,12 +17,14 @@ import java.net.URL;
  */
 public class MatchupGUI {
 
+    private MatchupController controller;
 
     public void start(Stage primaryStage) throws IOException {
         URL xml = getClass().getResource("/org/florian_wagner/snake/resources/matchup.fxml");
         System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
         Parent root = loader.load();
+        controller = loader.getController();
 
         int width = 377;
         int height = 383;
@@ -42,4 +45,7 @@ public class MatchupGUI {
         primaryStage.show();
     }
 
+    public MatchupController getController() {
+        return controller;
+    }
 }
