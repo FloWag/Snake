@@ -22,7 +22,6 @@ public class Snake {
      */
     public Snake(int x, int y, int length)
     {
-
         // create default snake
         SnakePart previousPart = null;
         for(int i = 0; i < length; i++)

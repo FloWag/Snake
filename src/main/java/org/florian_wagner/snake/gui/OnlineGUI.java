@@ -37,6 +37,7 @@ public class OnlineGUI {
         scene.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
+                System.out.println("Ja");
                 keyEventHandler.handleKeyEvent(event);
             }
         });
@@ -52,9 +53,11 @@ public class OnlineGUI {
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
+                System.out.println("hi man");
                 System.exit(0);
             }
         });
+
     }
 
     public OnlineController getController() {

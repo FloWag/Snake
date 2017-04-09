@@ -1,5 +1,6 @@
 package org.florian_wagner.snake.process;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -28,6 +29,9 @@ public class OnlineController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         gc = game_screen.getGraphicsContext2D();
+        scoreboard.setEditable(false);
+        scoreboard.setFocusTraversable(false);
+        scoreboard.setDisable(false);
     }
 
     /**
@@ -60,6 +64,12 @@ public class OnlineController implements Initializable {
         {
             items.add(s);
         }
-        scoreboard.setItems(items);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                scoreboard.setItems(items);
+            }
+        });
+
     }
 }

@@ -3,10 +3,13 @@ package org.florian_wagner.snake.game;
 import de.nrw.schulentwicklung.netzklassen.Client;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import org.florian_wagner.snake.core.Direction;
 import org.florian_wagner.snake.gui.OnlineGUI;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Created by Florian on 09.04.2017.
@@ -58,6 +61,21 @@ public class OnlineGame extends Client {
                     gui.getController().updateScoreboard(list);
                 }
                 break;
+            case "3":
+                gui.getController().cleanGC();
+                for(int i = 1; i < split.length; i++)
+                {
+                    String[] pixelset = split[i].split("'");
+                    Color color = Color.web(pixelset[0]);
+                    for(int j = 1; j < pixelset.length; j++)
+                    {
+                        String[] cords = pixelset[j].split(",");
+                        int x = Integer.parseInt(cords[0]);
+                        int y = Integer.parseInt(cords[1]);
+                        gui.getController().fillVirtualPixel(x,y,color);
+                    }
+                }
+                break;
         }
     }
 
@@ -67,6 +85,23 @@ public class OnlineGame extends Client {
      */
     public void handleKeyEvent(KeyEvent ev)
     {
+
+        if(ev.getCode() == KeyCode.UP)
+        {
+            send("5;" + Direction.NORTH.toInteger());
+        }
+        if(ev.getCode() == KeyCode.DOWN)
+        {
+            send("5;" + Direction.SOUTH.toInteger());
+        }
+        if(ev.getCode() == KeyCode.LEFT)
+        {
+            send("5;" + Direction.WEST.toInteger());
+        }
+        if(ev.getCode() == KeyCode.RIGHT)
+        {
+            send("5;" + Direction.EAST.toInteger());
+        }
 
         if(ev.getCode() == KeyCode.ENTER)
         {

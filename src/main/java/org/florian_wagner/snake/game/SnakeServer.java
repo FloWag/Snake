@@ -2,10 +2,7 @@ package org.florian_wagner.snake.game;
 
 import de.nrw.schulentwicklung.listenklassen.List;
 import de.nrw.schulentwicklung.netzklassen.Server;
-import org.florian_wagner.snake.core.Location;
-import org.florian_wagner.snake.core.Snake;
-import org.florian_wagner.snake.core.UnidentifiedConnection;
-import org.florian_wagner.snake.core.UserProfile;
+import org.florian_wagner.snake.core.*;
 
 import java.util.Random;
 
@@ -184,6 +181,28 @@ public class SnakeServer extends Server {
                     }
                 }
                 break;
+            case "5":
+                // find profile
+                for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())
+                {
+                    UserProfile profile = connectedUsers.getContent();
+                    if(profile.getClientIP().equalsIgnoreCase(pClientIP) && profile.getClientPort() == pClientPort)
+                    {
+                        Direction dir = Direction.fromInteger(Integer.parseInt(split[1]));
+
+                        // check if direction change is invalid
+                        Snake snake = profile.getSnake();
+                        if(dir == Direction.NORTH && snake.getDirection() == Direction.SOUTH)return;
+                        if(dir == Direction.SOUTH && snake.getDirection() == Direction.NORTH)return;
+                        if(dir == Direction.WEST && snake.getDirection() == Direction.EAST)return;
+                        if(dir == Direction.EAST && snake.getDirection() == Direction.WEST)return;
+
+                        // else it's ok
+                        snake.setDirection(dir);
+
+                    }
+                }
+                break;
         }
 
         System.out.println(pMessage);
@@ -196,6 +215,7 @@ public class SnakeServer extends Server {
         Snake snake = new Snake(0,new Random().nextInt(15),5);
         profile.setSnake(snake);
         profile.setScore(5);
+        updateScoreboard();
     }
 
     @Override
@@ -261,11 +281,11 @@ public class SnakeServer extends Server {
                 for(bodylocations.toFirst();bodylocations.hasAccess();bodylocations.next())
                 {
                     Location loc = bodylocations.getContent();
-                    toSend = toSend + "|" + loc.getX() + "," + loc.getY();
+                    toSend = toSend + "'" + loc.getX() + "," + loc.getY();
                 }
 
                 // then draw head
-                toSend = toSend + ";" + user.getColor_head() + "|" + snake.getHeadLocation().getX() +"," + snake.getHeadLocation().getY();
+                toSend = toSend + ";" + user.getColor_head() + "'" + snake.getHeadLocation().getX() +"," + snake.getHeadLocation().getY();
             }
         }
 
