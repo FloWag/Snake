@@ -1,4 +1,4 @@
-package org.florian_wagner.snake.process;
+package org.florian_wagner.snake.game;
 
 import de.nrw.schulentwicklung.listenklassen.List;
 import javafx.scene.input.KeyCode;
@@ -102,7 +102,7 @@ public class OfflineGame {
                 gameOver();
                 return;
             }
-            if(snake.getHeadLocation().getY() > 24 || snake.getHeadLocation().getY() < 0)
+            if(snake.getHeadLocation().getY() > 23 || snake.getHeadLocation().getY() < 0)
             {
                 gameOver();
                 return;

@@ -12,24 +12,25 @@ import java.io.IOException;
 import java.net.URL;
 
 /**
- * Created by Florian on 08.04.2017.
+ * Created by Florian on 09.04.2017.
  */
-public class AboutGUI {
+public class MatchupGUI {
+
 
     public void start(Stage primaryStage) throws IOException {
-        URL xml = getClass().getResource("/org/florian_wagner/snake/resources/about.fxml");
+        URL xml = getClass().getResource("/org/florian_wagner/snake/resources/matchup.fxml");
         System.out.println(xml == null);
         FXMLLoader loader = new FXMLLoader(xml);
         Parent root = loader.load();
 
-        int width = 467;
-        int height = 287;
+        int width = 377;
+        int height = 383;
 
         // set icon
         primaryStage.getIcons().add(new Image("/org/florian_wagner/snake/resources/abikalypse.png"));
 
         Scene scene = new Scene(root, width,height);
-        primaryStage.setTitle("Über");
+        primaryStage.setTitle("Mehrspieler Matchup");
         primaryStage.setScene(scene);
 
         //make stage in center of the screen

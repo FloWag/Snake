@@ -10,7 +10,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import org.florian_wagner.snake.process.OfflineController;
-import org.florian_wagner.snake.process.OfflineGame;
+import org.florian_wagner.snake.game.OfflineGame;
 
 import java.net.URL;
 

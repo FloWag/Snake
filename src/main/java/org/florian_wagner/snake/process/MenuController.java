@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.florian_wagner.snake.game.Matchup;
+import org.florian_wagner.snake.game.OfflineGame;
 import org.florian_wagner.snake.gui.AboutGUI;
 
 import java.io.IOException;
@@ -33,11 +35,6 @@ public class MenuController implements Initializable {
         // start offline game window
         new OfflineGame(stage);
 
-        // close current window
-        /*
-
-        stage.close();
-        */
     }
 
     /**
@@ -45,6 +42,8 @@ public class MenuController implements Initializable {
      */
     public void handlePlayMultiplayer()
     {
+        Stage stage = (Stage) button_playmultiplayer.getScene().getWindow();
+        new Matchup(stage);
         System.out.println("play multiplayer");
     }
 
@@ -60,6 +59,7 @@ public class MenuController implements Initializable {
             e.printStackTrace();
         }
     }
+
 
 
     /**

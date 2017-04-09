@@ -26,6 +26,7 @@ public class SnakeGame {
                 Application.launch(MainMenu.class);
             }
         }).start();
+
     }
 
 }
