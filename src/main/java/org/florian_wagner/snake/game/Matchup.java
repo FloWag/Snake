@@ -24,9 +24,9 @@ public class Matchup {
         gui.getController().setMatchup(this);
     }
 
-    public void hostGame()
+    public void hostGame(String name, Color color_snake, Color color_head, int speed)
     {
-
+        gui.getController().setStatus("Starte Server ...", Color.GREEN);
     }
 
     public void joinGame(String name, Color color_snake, Color color_head, String ip)

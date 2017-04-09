@@ -1,6 +1,7 @@
 package org.florian_wagner.snake;
 
 import javafx.application.Application;
+import org.florian_wagner.snake.game.SnakeServer;
 import org.florian_wagner.snake.gui.MainMenu;
 
 
@@ -9,6 +10,8 @@ import org.florian_wagner.snake.gui.MainMenu;
  */
 public class SnakeGame {
 
+    private static SnakeGame instance;
+    private SnakeServer snakeServer = null;
 
     public static void main(String[] args)
     {
@@ -20,13 +23,28 @@ public class SnakeGame {
      */
     public void init()
     {
+        instance = this;
         new Thread(new Runnable() {
             @Override
             public void run() {
                 Application.launch(MainMenu.class);
             }
         }).start();
+    }
 
+    public static SnakeGame getInstance()
+    {
+        return instance;
+    }
+
+    public SnakeServer getSnakeServer()
+    {
+        return snakeServer;
+    }
+
+    public void setSnakeServer(SnakeServer snakeServer)
+    {
+        this.snakeServer = snakeServer;
     }
 
 }

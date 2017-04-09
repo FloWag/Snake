@@ -37,7 +37,37 @@ public class MatchupController implements Initializable {
 
     public void handleHost()
     {
+        String n = name.getText();
+        if(n.isEmpty())
+        {
+            setStatus("Bitte Namen eingeben!",Color.RED);
+            return;
+        }
+        if(n.contains(";"))
+        {
+            setStatus("Bitte keine ; verwenden!",Color.RED);
+            return;
+        }if(n.contains("|"))
+        {
+            setStatus("Bitte keine | verwenden!",Color.RED);
+            return;
+        }if(n.contains(","))
+        {
+            setStatus("Bitte keine , verwenden!",Color.RED);
+            return;
+        }
 
+        int speed = 10;
+        try
+        {
+            speed = Integer.parseInt(speed_text.getText());
+        }catch(Exception e)
+        {
+            setStatus("'"+speed_text.getText() + "' ist keine Zahl!", Color.RED);
+            return;
+        }
+
+        matchup.hostGame(n,color_snake.getValue(),color_head.getValue(),speed);
     }
 
     public void handleJoin()
@@ -52,6 +82,14 @@ public class MatchupController implements Initializable {
         {
             setStatus("Bitte keine ; verwenden!",Color.RED);
             return;
+        }if(n.contains("|"))
+        {
+            setStatus("Bitte keine | verwenden!",Color.RED);
+            return;
+        }if(n.contains(","))
+        {
+            setStatus("Bitte keine , verwenden!",Color.RED);
+            return;
         }
         String ip = ip_text.getText();
         if(ip.isEmpty())
@@ -62,6 +100,14 @@ public class MatchupController implements Initializable {
         if(ip.contains(";"))
         {
             setStatus("Bitte kiene ; verwenden!",Color.RED);
+            return;
+        }if(ip.contains("|"))
+        {
+            setStatus("Bitte kiene | verwenden!",Color.RED);
+            return;
+        }if(ip.contains(","))
+        {
+            setStatus("Bitte kiene , verwenden!",Color.RED);
             return;
         }
 
