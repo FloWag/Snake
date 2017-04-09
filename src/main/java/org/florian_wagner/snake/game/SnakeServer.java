@@ -146,10 +146,31 @@ public class SnakeServer extends Server {
     @Override
     public void processMessage(String pClientIP, int pClientPort, String pMessage)
     {
-        for(unidentifiedConnections.toFirst();unidentifiedConnections.hasAccess();unidentifiedConnections.next())
-        {
 
+        String[] split = pMessage.split(";");
+        switch(split[0])
+        {
+            case "1":
+                for(unidentifiedConnections.toFirst();unidentifiedConnections.hasAccess();unidentifiedConnections.next())
+                {
+                    UnidentifiedConnection con = unidentifiedConnections.getContent();
+                    if(con.getIp().equalsIgnoreCase(pClientIP) && con.getPort() == pClientPort)
+                    {
+                        UserProfile profile = new UserProfile( // create new user
+                                split[1], // username
+                                0, // default score
+                                null, // snake
+                                pClientIP, // trivial
+                                pClientPort, // trivial
+                                split[2], // snake color
+                                split[3] // head color
+                        );
+                    }
+                }
+                break;
         }
+
+
     }
 
     @Override
@@ -194,6 +215,7 @@ public class SnakeServer extends Server {
             UserProfile user = connectedUsers.getContent();
             send(user.getClientIP(),user.getClientPort(),toSend);
         }
+        System.out.println(toSend);
 
     }
 
@@ -227,6 +249,7 @@ public class SnakeServer extends Server {
         {
             UserProfile user = connectedUsers.getContent();
             send(user.getClientIP(),user.getClientPort(),toSend);
+            System.out.println(toSend);
         }
     }
 

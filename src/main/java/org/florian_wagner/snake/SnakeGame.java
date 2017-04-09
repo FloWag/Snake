@@ -30,6 +30,8 @@ public class SnakeGame {
                 Application.launch(MainMenu.class);
             }
         }).start();
+
+        testServer();
     }
 
     public static SnakeGame getInstance()
@@ -53,7 +55,7 @@ public class SnakeGame {
         snakeServer.start();
 
         snakeServer.processClosedConnection("127.0.0.1",56744);
-
+        snakeServer.processMessage("127.0.0.1",56744,"1;Flo;rot;gruen");
     }
 
 }
