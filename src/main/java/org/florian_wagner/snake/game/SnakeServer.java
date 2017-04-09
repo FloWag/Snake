@@ -7,6 +7,8 @@ import org.florian_wagner.snake.core.Snake;
 import org.florian_wagner.snake.core.UnidentifiedConnection;
 import org.florian_wagner.snake.core.UserProfile;
 
+import java.util.Random;
+
 /**
  * Created by Florian on 09.04.2017.
  */
@@ -141,6 +143,7 @@ public class SnakeServer extends Server {
         // first unidentified connection
         UnidentifiedConnection con = new UnidentifiedConnection(pClientIP,pClientPort);
         unidentifiedConnections.append(con);
+        System.out.println("new con");
     }
 
     @Override
@@ -165,12 +168,34 @@ public class SnakeServer extends Server {
                                 split[2], // snake color
                                 split[3] // head color
                         );
+                        connectedUsers.append(profile);
+                        updateScoreboard();
+                    }
+                }
+                break;
+            case "4":
+                // find profile
+                for(connectedUsers.toFirst();connectedUsers.hasAccess();connectedUsers.next())
+                {
+                    UserProfile profile = connectedUsers.getContent();
+                    if(profile.getClientIP().equalsIgnoreCase(pClientIP) && profile.getClientPort() == pClientPort)
+                    {
+                        spawnSnake(profile);
                     }
                 }
                 break;
         }
 
+        System.out.println(pMessage);
 
+
+    }
+
+    private void spawnSnake(UserProfile profile)
+    {
+        Snake snake = new Snake(0,new Random().nextInt(15),5);
+        profile.setSnake(snake);
+        profile.setScore(5);
     }
 
     @Override

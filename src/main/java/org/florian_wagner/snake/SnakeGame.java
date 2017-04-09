@@ -54,8 +54,23 @@ public class SnakeGame {
         snakeServer = new SnakeServer(2);
         snakeServer.start();
 
-        snakeServer.processClosedConnection("127.0.0.1",56744);
-        snakeServer.processMessage("127.0.0.1",56744,"1;Flo;rot;gruen");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for(int i = 0; i < 10; i++)
+                {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+
+                    }
+                    snakeServer.processNewConnection("127.0.0.1",56744+i);
+                    snakeServer.processMessage("127.0.0.1",56744+i,"1;Flo"+i+";rot;gruen");
+                    snakeServer.processMessage("127.0.0.1",56744+i,"4");
+                }
+            }
+        }).start();
+
     }
 
 }
