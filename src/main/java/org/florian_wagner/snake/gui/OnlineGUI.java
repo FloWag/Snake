@@ -57,4 +57,7 @@ public class OnlineGUI {
         });
     }
 
+    public OnlineController getController() {
+        return controller;
+    }
 }

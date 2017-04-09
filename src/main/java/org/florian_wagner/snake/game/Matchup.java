@@ -36,7 +36,7 @@ public class Matchup {
         gui.getController().setStatus("Verbinde ...",Color.GREEN);
         String snakec = "#" + Integer.toHexString(color_snake.hashCode());
         String headc = "#" + Integer.toHexString(color_head.hashCode());
-        new OnlineGame(ip,11121,snakec,headc,stage);
+        new OnlineGame(ip,11121,snakec,headc,name,stage);
     }
 
 }

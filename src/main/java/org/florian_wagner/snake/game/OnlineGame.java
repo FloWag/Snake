@@ -18,11 +18,14 @@ public class OnlineGame extends Client {
 
     private OnlineGUI gui;
 
+    private String username;
 
-    public OnlineGame(String pIPAdresse, int pPortNr,String snake_color, String head_color, Stage stage) {
+
+    public OnlineGame(String pIPAdresse, int pPortNr,String snake_color, String head_color,String username, Stage stage) {
         super(pIPAdresse, pPortNr);
         this.snake_color = snake_color;
         this.head_color = head_color;
+        this.username = username;
         start(stage);
     }
 
@@ -34,11 +37,28 @@ public class OnlineGame extends Client {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        // send login
+        send("1;"+ username + ";" + snake_color + ";" + head_color);
     }
 
     @Override
     public void processMessage(String pMessage) {
-
+        String[] split = pMessage.split(";");
+        switch(split[0])
+        {
+            case "2":
+                if(split.length > 1)
+                {
+                    String[] list = new String[split.length-1];
+                    for(int i = 1; i < split.length; i++)
+                    {
+                        list[i-1] = split[i];
+                    }
+                    gui.getController().updateScoreboard(list);
+                }
+                break;
+        }
     }
 
     /**
@@ -50,7 +70,9 @@ public class OnlineGame extends Client {
 
         if(ev.getCode() == KeyCode.ENTER)
         {
-
+            // request snake spawn
+            System.out.println("Hi");
+            send("4");
         }
     }
 }
