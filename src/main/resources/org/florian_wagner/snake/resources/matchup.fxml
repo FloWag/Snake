@@ -29,7 +29,7 @@
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <TextField fx:id="ip_text" layoutX="95.0" layoutY="35.0" promptText="10.3.0.x" />
-                        <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP-Addresse:" />
+                        <Text layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP-Adresse:" />
                         <Button fx:id="button_join" layoutX="257.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#handleJoin" prefHeight="25.0" prefWidth="112.0" text="Beitreten!" />
                      </children>
                   </Pane>
